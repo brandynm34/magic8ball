@@ -2,3 +2,35 @@
 an input field to input a question,
 an ask button that when clicked, will output a random image
 a div/img tag that you can output the image into -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Magic 8 ball</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <header align="center">
+      <h1 style="font-size:75px;">Magic 8 Ball</h1>
+      <p style="font-size:30px;">What's your question?</p>
+    </header>
+
+    <img id="magicBall" src="img/magic8ball_empty.png" width="350" height="350" alt="some image" align="middle">
+
+    <form id="Btn" action="" align="center">
+      <!-- submitter -->
+      <input id="questionText"  type="text" placeholder="Put question here" size="85"><br>
+      <!-- button -->
+      <button id="myBtn" type="button" onclick="random8Ball();" > Push to ask</button>
+
+    </form>
+
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
